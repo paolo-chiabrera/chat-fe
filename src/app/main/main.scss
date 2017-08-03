@@ -32,3 +32,8 @@ footer {
   background-color: #1f1f1f;
   color: white;
 }
+
+.messages-container {
+  height: 600px;
+  overflow-y: auto;
+}
