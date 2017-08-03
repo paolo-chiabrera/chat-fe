@@ -1,0 +1,11 @@
+<div class="users-container">
+  <h5>Users</h5>
+  <ul class="user-list">
+    <li class="user-item"
+      ng-repeat="user in $ctrl.users"
+      ng-style="{ color: user.color }"
+      ng-class="{'current': user.username == $ctrl.user.username}">
+      {{ user.username }}
+    </li>
+  </ul>
+</div>
