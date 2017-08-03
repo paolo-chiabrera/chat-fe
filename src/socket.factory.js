@@ -1,5 +1,5 @@
 module.exports = function ($rootScope) {
-  const socket = io.connect();
+  const socket = io();
 
   return {
     on: (eventName, callback) => {
