@@ -1,5 +1,5 @@
 <div class="send-message-container">
   <label for="send-message">Write message:</label>
-  <input id="send-message" type="text" ng-model="$ctrl.content" autofocus/>
+  <input id="send-message" type="text" ng-model="$ctrl.content" ng-keyup="$ctrl.hasStopTyping()" ng-keypress="$ctrl.hasStartTyping()" autofocus/>
   <button class="button button-outline" ng-click="$ctrl.sendMessage($ctrl.content)" ng-disabled="$ctrl.content.length == 0">Send</button>
 </div>

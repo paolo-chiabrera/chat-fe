@@ -1,0 +1,8 @@
+<div class="notifications-container">
+  <h3>Notifications</h3>
+  <ul class="notification-list">
+    <li class="notification-item" ng-repeat="notification in $ctrl.notifications">
+      [{{ $ctrl.getTime(notification.datetime) }}] <span ng-style="{ color: notification.user.color }">{{ notification.user.username }}</span>: {{ notification.type }}
+    </li>
+  </ul>
+</div>

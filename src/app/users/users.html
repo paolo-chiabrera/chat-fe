@@ -5,7 +5,7 @@
       ng-repeat="user in $ctrl.users"
       ng-style="{ color: user.color }"
       ng-class="{'current': user.username == $ctrl.user.username}">
-      {{ user.username }}
+      <avatar user="user"></avatar> {{ user.username }}
     </li>
   </ul>
 </div>

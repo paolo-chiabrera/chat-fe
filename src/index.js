@@ -6,7 +6,10 @@ import routesConfig from './routes';
 import main from './app/main';
 
 import messages from './app/messages';
+import joiners from './app/joiners';
+import typing from './app/typing';
 import sendMessage from './app/send-message';
+import avatar from './app/avatar';
 
 import users from './app/users';
 import user from './app/user';
@@ -23,4 +26,7 @@ angular
 .component('users', users)
 .component('user', user)
 .component('messages', messages)
-.component('sendMessage', sendMessage);
+.component('joiners', joiners)
+.component('typing', typing)
+.component('sendMessage', sendMessage)
+.component('avatar', avatar);

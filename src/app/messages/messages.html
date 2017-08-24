@@ -2,7 +2,7 @@
   <h5>Messages</h5>
   <ul class="message-list">
     <li class="message-item" ng-repeat="message in $ctrl.messages">
-      [{{ $ctrl.getTime(message.datetime) }}] <span ng-style="{ color: message.user.color }">{{ message.user.username }}</span>: {{ message.content }}
+      [{{ $ctrl.getTime(message.datetime) }}] <avatar user="message.user"></avatar><span ng-style="{ color: message.user.color }">{{ message.user.username }}</span>: {{ message.content }}
     </li>
   </ul>
 </div>

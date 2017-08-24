@@ -1,0 +1,8 @@
+<div class="typing-container">
+  <div ng-if="$ctrl.getNumberOfTypingUsers() === 1">
+    <div>{{$ctrl.getTypingLonelyUser()}} is typing</div>
+  </div>
+  <div ng-if="$ctrl.getNumberOfTypingUsers() > 1">
+    <div>{{$ctrl.getNumberOfTypingUsers()}} users are typing</div>
+  </div>
+</div>
